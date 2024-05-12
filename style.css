@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin:400);
+
+
+body{
+  margin: 0;
+  padding: 0;
+  border-radius: 100%;
+  background-color: black;
+}
+.section{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+
+}
+.button{
+  font-family: 'Cabin', helvetica, arial, sans-serif;
+height: 42px;
+  width: 88px;
+  background: #222;
+	background: linear-gradient(#333, #222);
+  box-sizing:border-box;
+  border: 1px solid #444;
+  color: #fff;
+  line-height: 40px;
+  text-shadow: 0 -1px 0 #000;
+  border-radius: 3px;
+
+
+}
+.button:hover{
+	background: linear-gradient(#393939, #292929);
+	color: #5f5;
+  animation: glow 800ms ease-out infinite alternate;
+
+}
+.input{
+  font-family: 'Cabin', helvetica, arial, sans-serif;
+	background: linear-gradient(#393939, #292929);
+
+height: 40px;
+width: 200px;
+color: #fff;
+border-radius: 5px;
+
+
+}
+
+
+
+.input:hover{
+  animation: glow 800ms ease-out infinite alternate;
+
+}
+@keyframes glow{
+
+  0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+    }
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
+    }
+}
